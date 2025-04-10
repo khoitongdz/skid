@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đặc điểm sản phẩm</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-image: url(https://i.imgur.com/ZnuP7hu.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      background-image: url(https://i.imgur.com/MNmSWsH.jpeg);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
+    .features h2 {
+      font-size: 15px;
+      margin-bottom: 15px;
+      color: #000;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      background: rgba(255,238,217,0.9);
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #000;
+      backdrop-filter: blur(5px);
+    }
+    .feature-item img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .video-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      position: relative;
+    }
+    .video-card iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+    
+    <!-- Video -->
+  <div class="container">
+    <div class="video-card">
+      <iframe src="https://www.youtube.com/watch?v=4fyIs7NwmEA&t=4s" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Đặc điểm -->
+  <div class="container">
+    <div class="features">
+      <h2>Đặc Điểm</h2>
+      <div class="feature-grid">
+        <div class="feature-item"><img src="https://i.imgur.com/5pOrDaO.png"><p>Thiết Bị Free</p></div>
+        <div class="feature-item"><img src="https://i.imgur.com/5pOrDaO.png"><p>Vô Hạn Chơi</p></div>
+        <div class="feature-item"><img src="https://i.imgur.com/5pOrDaO.png"><p>Không VPN</p></div>
+        <div class="feature-item"><img src="https://i.imgur.com/5pOrDaO.png"><p>30+ Thiết Bị</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lưu ý -->
+  <div class="container">
+    <div class="features">
+      <h2>Cần Lưu Ý</h2>
+      <div class="feature-grid">
+        <div class="feature-item"><img src="https://i.imgur.com/p4jM8ID.png"><p>Không Thoát Khi Đang Chơi</p></div>
+        <div class="feature-item"><img src="https://i.imgur.com/p4jM8ID.png"><p>Mở Cửa Sổ Nổi Để Treo Game</p></div>
+        <div class="feature-item"><img src="https://i.imgur.com/p4jM8ID.png"><p>Hay Bị Lỗi Quá Tải Máy Chủ</p></div>
+        <div class="feature-item"><img src="https://i.imgur.com/p4jM8ID.png"><p>Không Lưu Dữ Liệu Data Reset</p></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
